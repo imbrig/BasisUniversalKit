@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BasisUniversalKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "Load and use Basis Universal image format in iOS."
 
   s.description  = <<-DESC

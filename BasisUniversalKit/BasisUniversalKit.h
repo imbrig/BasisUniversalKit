@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char BasisUniversalKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BasisUniversalKit/PublicHeader.h>
 #define BASISD_SUPPORT_PVRTC2
-#include "/basis_universal/transcoder/basisu_transcoder.h"
+#include "basisu.h"

@@ -46,4 +46,4 @@ For more information about how to use CocoaPods, I suggest [this tutorial](http:
 
 ## License
 
-### Changelog (Image Metrics internal releases) ###
+### Changelog ###

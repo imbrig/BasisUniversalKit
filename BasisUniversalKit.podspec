@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.license      = { :type => "Apache-2.0", :file => "LICENSE" }
 
-  s.authors            = { "*****" => "*****@*****.com" }
+  s.authors            = { "abcd" => "abcd@abcd.com" }
 
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   
   s.source_files  = "BasisUniversalKit/*.{h,swift}", "BasisUniversalKit/basis_universal/transcoder/*.{h,cpp,inc}"
   s.public_header_files = ["BasisUniversalKit/BasisUniversalKit.h", "BasisUniversalKit/basis_universal/transcoder/basisu.h", "BasisUniversalKit/basis_universal/basisu_transcoder.h"]
-  s.library   = "*****"
+  s.library   = "abcd"
   s.swift_version = '4.2'
 end

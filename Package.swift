@@ -6,24 +6,26 @@ let package = Package(
     platforms: [.macOS(.v10_10), .iOS(.v8)],
     products: [
         .library(
-            name: "BasisUniversalKit",
-            targets: ["BasisUniversalKit"]),
-        .library(
             name: "basisu",
+            type: .dynamic,
             targets: ["basisu"]),
+        .library(
+            name: "BasisUniversalKit",
+            type: .dynamic,
+            targets: ["BasisUniversalKit"])
     ],
     targets: [
         .target(
+            name: "basisu",
+            dependencies: [],
+            path: "BasisUniversalKit/basis_universal/transcoder/"),
+        .target(
             name: "BasisUniversalKit",
-            dependencies: [
-                "basisu",
-            ],
+            dependencies: ["basisu"],
             path: "BasisUniversalKit",
             exclude: ["basis_universal"]
-        ),
-        .target(
-            name: "basisu",
-            path: "BasisUniversalKit/basis_universal/transcoder/"),
+        )
     ],
-    swiftLanguageVersions: [.v4_2]
+    swiftLanguageVersions: [.v4_2],
+    cxxLanguageStandard: .gnucxx14
 )

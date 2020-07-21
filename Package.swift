@@ -11,6 +11,7 @@ let package = Package(
             targets: ["basisu"]),
         .library(
             name: "BasisUniversalKit",
+            type: .dynamic,
             targets: ["BasisUniversalKit"])
     ],
     targets: [

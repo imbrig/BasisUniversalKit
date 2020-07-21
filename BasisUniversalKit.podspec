@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BasisUniversalKit"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Load and use Basis Universal image format in iOS."
   s.description  = <<-DESC
                     BasisUniversalKit
@@ -15,9 +15,5 @@ Pod::Spec.new do |s|
   s.source_files  = "BasisUniversalKit/*.{h,swift}", "BasisUniversalKit/basis_universal/transcoder/*.{h,cpp,inc}"
   s.public_header_files = ["BasisUniversalKit/BasisUniversalKit.h", "BasisUniversalKit/basis_universal/transcoder/basisu.h", "BasisUniversalKit/basis_universal/basisu_transcoder.h"]
   s.library   = "c++"
-  s.xcconfig = {
-       'CLANG_CXX_LANGUAGE_STANDARD' => 'c++14',
-       'CLANG_CXX_LIBRARY' => 'libc++'
-  }
   s.swift_version = '4.2'
 end

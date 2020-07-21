@@ -9,4 +9,3 @@ files = ["basisu.h", "basisu_file_headers.h", "basisu_global_selector_cb.h", "ba
 files.map! {|file| "./basis_universal/transcoder/" + file}
 
 FileUtils.cp files, './BasisUniversalKit/basis_universal/transcoder'
-#FileUtils.cp './basis_universal/transcoder/pnglibconf.h.prebuilt', './BasisUniversalKit/transcoder/pnglibconf.h'

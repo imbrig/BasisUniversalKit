@@ -7,11 +7,9 @@ let package = Package(
     products: [
         .library(
             name: "basisu",
-            type: .dynamic,
             targets: ["basisu"]),
         .library(
             name: "BasisUniversalKit",
-            type: .dynamic,
             targets: ["BasisUniversalKit"])
     ],
     targets: [
@@ -26,6 +24,5 @@ let package = Package(
             exclude: ["basis_universal"]
         )
     ],
-    swiftLanguageVersions: [.v4_2],
     cxxLanguageStandard: .gnucxx14
 )

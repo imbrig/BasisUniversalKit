@@ -7,11 +7,9 @@ let package = Package(
     products: [
         .library(
             name: "basisu",
-            type: .dynamic,
             targets: ["basisu"]),
         .library(
             name: "BasisUniversalKit",
-            type: .dynamic,
             targets: ["BasisUniversalKit"])
     ],
     targets: [

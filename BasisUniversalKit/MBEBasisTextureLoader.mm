@@ -1,3 +1,8 @@
+//
+//  MBEBasisTextureLoader.mm
+//  BasisUniversalKit
+//  From https://metalbyexample.com/basis-universal/
+//
 
 #import "MBEBasisTextureLoader.h"
 #import <MetalKit/MetalKit.h>

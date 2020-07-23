@@ -1,14 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "BasisUniversalKit"
-  s.version      = "0.0.13"
-  s.summary      = "Load and use Basis Universal image format in iOS."
+  s.version      = "1.0.0"
+  s.summary      = "Load and use the Basis Universal image format in iOS."
   s.description  = <<-DESC
                     BasisUniversalKit
                    DESC
 
   s.homepage  = "https://github.com/imbrig/BasisUniversalKit"
   s.license   = { :type => "Apache-2.0", :file => "LICENSE" }
-  s.authors   = "IMBrig"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.10"
   s.source = { :git => "https://github.com/imbrig/BasisUniversalKit.git", :tag => s.version }

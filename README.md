@@ -1,6 +1,6 @@
 # BasisUniversalKit
 
-BasisUniversalKit is a high performance framework for loading and displaying basis-universal images in iOS and macOS. It's built on top of (https://github.com/BinomialLLC/basis_universal) with basis-universal support and written in Swift.
+BasisUniversalKit is a high performance framework for loading and displaying basis-universal images in iOS and macOS. It's built on top of (https://github.com/BinomialLLC/basis_universal) with basis-universal support and written in Objective-C and Swift wrappers. Special mention goes to https://metalbyexample.com/basis-universal/ for using the MBEBasisTextureLoader class for loading images and returning Metal Textures.
 
 ## What and Why?
 
@@ -35,6 +35,8 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
+Note that in some projects, the `modular_headers` flag needs to be set to true. The PodFile for the parent project should for example look like below.
+```pod 'BasisUniversalKit', :git => 'git@github.com:imbrig/BasisUniversalKit.git', :tag => '1.0.0', :modular_headers => true```
 
 You should open the `{Project}.xcworkspace` instead of the `{Project}.xcodeproj` after you installed anything from CocoaPods.
 
@@ -47,3 +49,5 @@ For more information about how to use CocoaPods, I suggest [this tutorial](http:
 ## License
 
 ### Changelog ###
+### 1.0.0
+* Initial release after testing and configuring cocoapods.
